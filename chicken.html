@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FaceBox - Bad Chicken</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="bio">
+      <img src="chicken.jpg" />
+      <h1>Bad Chicken</h1>
+      <p><a onclick="showMessage(); return false" href="/tools/social/friend-request.asp?user=bad-chicken&replyto=gerardwayisagod%40hotmail-co-uk">Friend Request</a></p>
+      <script>
+        function showMessage() {
+          document.getElementById("friendMessage").style.visibility = "visible";
+        }
+      </script>
+      <p id="friendMessage" class="no">This user has declined your friend request.</p>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <p>A limerick:</p>
+        <p>There was an old man with a beard,<br />
+        A funny old man with a beard<br />
+        He had a big beard<br />
+        A great big old beard<br />
+        That amusing old man with a beard.</p>
+        <p class="date">26th September</p>
+        <p class="reply-name"><a href="llama.html">Llama Drama</a> replied:</p>
+        <p class="reply-post">LOLLL!!!!!</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+      <div class="post">
+        <p>We won! #champions #likelightning</p>
+        <p><a href="ccnews.html">http://www.crosscountryassociation.co.uk/news/school-finals.html</a></p>
+        <p class="date">23rd February</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+      <div class="post">
+        <p>Cross country team training to our favourite band! 3 days to go!</p>
+        <p class="date">19th February</p>
+        <p class="reply-name"><a href="index.html">Kobra Kid</a> replied:</p>
+        <p class="reply-post">Still can't believe they split up! #notokayipromise</p>
+      </div>
+    </div>
+  </body>
+</html>
