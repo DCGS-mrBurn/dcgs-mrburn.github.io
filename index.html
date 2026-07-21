@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FaceBox - Kobra Kid</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="bio">
+      <img src="kobra.jpg" />
+      <h1>Kobra Kid</h1>
+      <p><a id="kobraMail" onclick="showMessage(); return false" href="/tools/social/friend-request.asp?user=kobra-kid&replyto=kobrakid%40gmail-com">Friend Request</a></p>
+      <script>
+        function showMessage() {
+          document.getElementById("friendMessage").style.visibility = "visible";
+        }
+      </script>
+      <p id="friendMessage" class="no">This user has declined your friend request.</p>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <p>So cold this morning - the lake had ice on it!</p>
+        <p class="date">14th December</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+      <div class="post">
+        <p>My textbooks are greasy... #ewww</p>
+        <p class="date">15th May</p>
+        <p class="reply-name"><a href="chicken.html">Bad Chicken</a> replied:</p>
+        <p class="reply-post">Wait, what? How?</p>
+      </div>
+      <div class="post">
+        <p>Early start for the cross country finals! #aspireperseveresucceed #invictus</p>
+        <p class="date">22nd February</p>
+        <p class="reply-name"><a href="llama.html">Llama Drama</a> replied:</p>
+        <p class="reply-post">Good luck!!!! Do us proud, you're amazing!!!</p>
+      </div>
+      <div class="post">
+        <p class="private">Only friends can see this post.</p>
+      </div>
+    </div>
+    <script>
+      var year = new Date().getFullYear() - 15
+      document.getElementById("kobraMail").href = "/tools/social/friend-request.asp?user=kobra-kid&replyto=kobrakid" + year + "%40gmail-com";
+    </script>
+  </body>
+</html>
