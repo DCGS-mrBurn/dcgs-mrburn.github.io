@@ -1,0 +1,75 @@
+body {
+  margin: 20px;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.bio {
+  width: 210px;
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+}
+
+.bio img {
+  border-radius: 5px;
+}
+
+.bio h1 {
+  font-size: 28px;
+}
+
+#friendMessage {
+  font-size: 14px;
+  visibility: hidden;
+}
+
+.no {
+  color: red;
+}
+
+.yes {
+  color: green;
+}
+
+.posts {
+  float: left;
+  width: 500px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.post p, .post img {
+  margin: 0;
+  padding: 0 15px 15px;
+}
+
+.post img {
+  width: 470px;
+}
+
+.reply-name, .reply-post {
+  background-color: aliceblue;
+}
+
+p.reply-name {
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+.private, .date {
+  color: #888;
+}
+
+.private {
+  font-style: italic;
+}
+
+.date {
+  text-align: right;
+  font-size: 12px;
+}
